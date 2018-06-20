@@ -1,0 +1,50 @@
+<div class="oneview-footer">
+
+  <div class="session">
+    <span class="user">
+      <span class="icon"><img src='https://i.imgur.com/h8Zzni9.png' alt="Smiley face" height="42" width="42">
+</span>
+      <span class="login">{{agent.firstName}} {{agent.lastName}}</span>
+    </span>
+    <span class="timer">
+      <span class="remaining-time"></span>
+      <span class="signout" on-click="logout">{{i18n.signOut}}</span>
+    </span>
+  </div>
+
+  <div class="fav-links">
+    <a href="https://ssp.rogers.com/shop/cfawelcome" on-click="deepLink">{{i18n.nextBillEstimator}}</a>
+    <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.trainingMaterials}}</a>
+    <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.shareEverythingEstimator}}</a>
+  </div>
+
+  <div class="ssp-links">
+    <span class="icon" on-click="toggleQuickLinks"> <img src='https://i.imgur.com/sdKUrwI.png' alt = 'arrow' height="42" width="42"> </span>
+    <div class="quick-links">
+      <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.sspLinks.sspMainPage}}</a>
+      <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.sspLinks.sspMainPage}}</a>
+      <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.sspLinks.sspMainPage}}</a>
+      <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.sspLinks.sspMainPage}}</a>
+      <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.sspLinks.sspMainPage}}</a>
+      <br/>
+      <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.sspLinks.sspMainPage}}</a>
+      <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.sspLinks.sspMainPage}}</a>
+      <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.sspLinks.sspMainPage}}</a>
+      <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.sspLinks.sspMainPage}}</a>
+      <a href="https://ssp.rogers.com/shop/cfawelcome">{{i18n.sspLinks.sspMainPage}}</a>
+    </div>
+  </div>
+
+  <div class="live-chat" onclick="alert('Livechat custom element')">
+    <span class="icon"><img src='https://i.imgur.com/9dQMINR.png' alt ="headset" height = "42" width = "42"></span>
+  </div>
+
+  <div class="whats-new" onclick="alert('Alerts custom element')">
+    <span class="icon"><img src='https://i.imgur.com/6eplyqY.png' alt = "bell" height = "42" width = "42"></span>
+  </div>
+
+  <div class="language">
+    <a href="?lang={{otherLang}}" id="other-language"></a>
+  </div>
+
+</div>

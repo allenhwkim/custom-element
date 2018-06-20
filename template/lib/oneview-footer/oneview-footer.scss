@@ -1,0 +1,98 @@
+.oneview-footer {
+  background-color: #1DAEC9;
+  color: #fff;
+  font-size: 14px;
+  min-height: 48px;
+  padding: 0px 36px;
+  position: relative;
+  // display: block;
+  display: flex;
+  align-items: center;
+  .icon {
+
+  }
+  > * {
+    display: inline-block;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .session {
+    min-width: 400px;
+    .user{
+      display: table-cell;
+    vertical-align: middle;
+    .login{
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    }
+      .icon{
+       display: table-cell;
+       vertical-align: middle;
+       // background: url('./baseline_account_circle_white_18dp.png');
+      }
+    }
+    .timer {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .signout{
+      border-radius: 10px;
+      border: 1px solid white;
+      padding: 5px;
+      width: 50px;
+      height: 50px;  
+      margin-left: 10;
+      cursor: pointer;
+      }
+    }
+  }
+  .fav-links {
+    flex: 1;
+    > * {
+      display: inline-block;
+      min-width: 160px;
+    }
+  }
+  .ssp-links {
+    min-width: 60px;
+    cursor: pointer;
+    .quick-links.visible{
+      width: 90%;
+      background-color: rgba(234, 254, 247, 1);
+      border-radius: 25px;
+      text-align: center;
+    }
+  }
+  .live-chat {
+    min-width: 60px;
+  }
+  .whats-new {
+    min-width: 60px;
+  }
+  .language {
+    color: #fff;
+  }
+  .quick-links {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    border: 1px solid #ccc;
+    display: none;
+    &.visible {
+      display: block;
+    }
+    a {
+      color: #333;
+    }
+  }
+}

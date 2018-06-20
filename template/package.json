@@ -1,0 +1,36 @@
+{
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "version": "0.0.0",
+  "main": "dist/{{name}}.umd.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --open --compress",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "document-register-element": "^1.9.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.4",
+    "html-custom-element": "^0.2.4",
+    "html-webpack-plugin": "^3.2.0",
+    "mustache": "^2.3.0",
+    "node-sass": "^4.9.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.21.0",
+    "to-string-loader": "^1.1.5",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.9.1",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
